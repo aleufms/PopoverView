@@ -8,6 +8,7 @@
 
 #import "PopoverView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "BBMHelper.h"
 
 #pragma mark Constants - Configure look/feel
 
@@ -17,7 +18,7 @@
 #define kArrowHeight 12.f
 
 //padding within the box for the contentView
-#define kBoxPadding 2.f
+#define kBoxPadding 6.f
 
 //control point offset for rounding corners of the main popover box
 #define kCPOffset 1.8f
@@ -56,19 +57,19 @@
 // BACKGROUND GRADIENT
 
 //bottom color white in gradient bg
-#define kGradientBottomColor [UIColor colorWithWhite:0.980f alpha:kBoxAlpha]
+#define kGradientBottomColor [UIColor colorWithWhite:0.f alpha:kBoxAlpha]
 
 //top color white value in gradient bg
-#define kGradientTopColor [UIColor colorWithWhite:1.f alpha:kBoxAlpha]
+#define kGradientTopColor [UIColor colorWithWhite:0.1f alpha:kBoxAlpha]
 
 
 // TITLE GRADIENT
 
 //bottom color white value in title gradient bg
-#define kGradientTitleBottomColor [UIColor colorWithWhite:0.93f alpha:kBoxAlpha]
+#define kGradientTitleBottomColor [UIColor colorWithWhite:0.1f alpha:kBoxAlpha]
 
 //top color white value in title gradient bg
-#define kGradientTitleTopColor [UIColor colorWithWhite:1.f alpha:kBoxAlpha]
+#define kGradientTitleTopColor [UIColor colorWithWhite:0.6f alpha:kBoxAlpha]
 
 
 // FONTS
@@ -83,10 +84,10 @@
 #define kTextAlignment UITextAlignmentCenter
 
 //title font
-#define kTitleFont [UIFont fontWithName:@"HelveticaNeue" size:22.f]
+#define kTitleFont [BBMHelper defaultFont]
 
 //title text color
-#define kTitleColor [UIColor colorWithRed:0.329 green:0.341 blue:0.353 alpha:1]
+#define kTitleColor [UIColor whiteColor]
 
 
 
