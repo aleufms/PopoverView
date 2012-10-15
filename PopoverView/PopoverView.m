@@ -192,6 +192,8 @@
     self.contentView = nil;
     self.titleView = nil;
     
+    [dividerRects release];
+    
     [super dealloc];
 }
 
