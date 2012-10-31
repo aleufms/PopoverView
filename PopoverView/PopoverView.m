@@ -96,7 +96,7 @@
 #define kTextAlignment UITextAlignmentCenter
 
 //title font
-#define kTitleFont [BBMHelper defaultFont]
+#define kTitleFont [BBMHelper defaultBoldFont]
 
 //title text color
 #define kTitleColor [UIColor whiteColor]
